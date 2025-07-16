@@ -2,7 +2,7 @@
 import requests
 import os
 
-GOOGLE_API_KEY = "AIzaSyDCniccFISBOmTp4szMHZ3JSZ_Iyzfqidk"  # 🔁 Replace this with your real key
+GOOGLE_API_KEY = "YOUR API"  # 🔁 Replace this with your real key
 
 def generate_satellite_image(lat, lon, date):
     zoom = 19 # 🔍 Zoom level: 17–19 works well
@@ -26,7 +26,7 @@ def generate_satellite_image(lat, lon, date):
         }
 
     url = (
-        f"https://maps.googleapis.com/maps/api/staticmap?"
+        f"YOUR API"
         f"center={lat},{lon}&zoom={zoom}&size={width}x{height}"
         f"&maptype={maptype}&key={GOOGLE_API_KEY}"
     )
