@@ -69,7 +69,7 @@ export default function CustomResultScreen({ route, navigation }) {
       };
 
       try {
-        const res = await fetch('http://10.201.46.83:5000/weather', {
+        const res = await fetch('YOUR IPV4:5000/weather', {
 
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -111,7 +111,7 @@ export default function CustomResultScreen({ route, navigation }) {
 
   const satelliteUrl = satellite.image_url?.startsWith('http')
     ? satellite.image_url
-    : `http://10.201.46.83:5000${satellite.image_url || ''}`;
+    : `YOUR IPV4:5000${satellite.image_url || ''}`;
 
   const renderWeekSection = (title, data, isCurrent = false) =>
   data.length > 0 ? (
