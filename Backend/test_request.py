@@ -1,7 +1,7 @@
 import requests
 import json
 
-URL = "http://127.0.0.1:5000/weather"
+URL = "YOUR URL"
 DATA = {
     "location": "delhi",
     "date": "2025-07-08"
