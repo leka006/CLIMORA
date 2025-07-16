@@ -8,8 +8,8 @@ warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 # Sentinel Hub Config
 config = SHConfig()
-config.sh_client_id = "2ed23a6a-5abb-42bf-906e-805690e56802"
-config.sh_client_secret = "N14niwGjlJ3s90x1qxZbqmVr2W7kF5zp"
+config.sh_client_id = "2YOUR API"
+config.sh_client_secret = "YOUR API"
 
 # NDVI Evalscript
 evalscript = """//VERSION=3
@@ -66,7 +66,7 @@ def estimate_soil_condition(latitude, longitude, base_date):
     # Fetch Weather if NDVI is available
     if used_date:
         weather_url = (
-            f"https://api.open-meteo.com/v1/forecast?"
+            f"YOUR API"
             f"latitude={latitude}&longitude={longitude}"
             f"&hourly=precipitation,relative_humidity_2m"
             f"&start_date={used_date}&end_date={used_date}&timezone=auto"
