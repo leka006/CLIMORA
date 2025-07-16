@@ -64,7 +64,7 @@ export default function FindMeScreen({ navigation }) {
       const name = geo[0].city || geo[0].district || geo[0].region || 'Unknown';
       setLocationName(name);
 
-      const response = await fetch('http://10.201.46.83:5000/weather', {
+      const response = await fetch('YOUR IPV4:5000/weather', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -135,7 +135,7 @@ export default function FindMeScreen({ navigation }) {
   const satelliteUrl = weatherData?.satellite_image?.image_url
     ? weatherData.satellite_image.image_url.startsWith('http')
       ? weatherData.satellite_image.image_url
-      : `http://10.201.46.83:5000${weatherData.satellite_image.image_url.startsWith('/') ? '' : '/'}${weatherData.satellite_image.image_url}`
+      : `YOUR IPV4:5000${weatherData.satellite_image.image_url.startsWith('/') ? '' : '/'}${weatherData.satellite_image.image_url}`
     : null;
 
   return (
